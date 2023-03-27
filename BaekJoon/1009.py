@@ -25,3 +25,27 @@
 9 635   / 9
 
 """
+
+
+def power(a, n):
+    if n == 0:
+        return 1
+    
+    x = power(a, n//2)
+
+    if n % 2 == 0:
+        return (x * x) % 10
+    
+    else:
+        return (x * x * a) % 10
+
+
+T = int(input())
+
+for _ in range(T):
+    a, b = map(int, input().split())
+    z = power(a, b)
+    if not z:
+        print(z + 10)
+    else:
+        print(z)
