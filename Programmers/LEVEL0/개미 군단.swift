@@ -18,7 +18,7 @@ enum Ant {
 }
 
 extension Ant {
-    var strikingPower: Int {
+    var strikingPower: Int {₩
         switch self {
             case .general:
             return 5
