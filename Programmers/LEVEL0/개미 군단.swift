@@ -8,7 +8,6 @@
 /// 사냥감의 체력 hp가 매개변수로 주어질 때, 사냥감의 체력에 딱 맞게 최소한의 병력을 구성하려면
 /// 몇 마리의 개미가 필요한지를 return하도록 solution 함수를 완성해주세요.
 
-
 import Foundation
 
 enum Ant {
