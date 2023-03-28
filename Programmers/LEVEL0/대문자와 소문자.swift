@@ -4,24 +4,12 @@
 
 import Foundation
 
-extension String {
-    var isLowercased: Bool {
-        for character in utf8 where (65...90) ~= character { return false }
-        return true
-    }
-    
-    var isUppercased: Bool {
-        for character in utf8 where (97...122) ~= character { return false }
-        return true
-    }
-}
-
 func solution(_ my_string:String) -> String {
     
     var stringArray: [String] = my_string.map { String($0) }
     
     for (index, string) in stringArray.enumerated() {
-        if string.isLowercased {
+        if Character(string).isLowercase {
             stringArray[index] = stringArray[index].uppercased()
         } else {
             stringArray[index] = stringArray[index].lowercased()
