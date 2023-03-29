@@ -8,7 +8,7 @@ import Foundation
 
 func solution(_ n:Int) -> Int {
 
-    // MARK: - 풀이법
+    // MARK: - 풀이법 (6과 n의 최소공배수)
     /// 모두 같은 수의 피자 조각을 먹기 위해서는
     /// 필요한 피자 조각이 6의 배수이면서 n의 배수여야 한다.
     /// 필요한 피자 조각(needSlices)이 6의 배수가 될 때까지
