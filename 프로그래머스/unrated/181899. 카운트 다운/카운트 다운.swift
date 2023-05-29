@@ -1,0 +1,1 @@
+func solution(_ start: Int, _ end: Int) -> [Int] { Array(end...start).reversed() }
